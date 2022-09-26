@@ -1,0 +1,121 @@
+:root {
+  --color-primary: hsl(207, 90%, 20%);
+  --color-secondary: hsl(237, 90%, 20%);
+  --color-tertiary: hsl(177, 90%, 20%);
+  --color-white: hsl(0, 20%, 100%);
+  --color-black: hsl(0, 0%, 10%);
+  --size: 60px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
+  color: var(--color-primary);
+}
+
+html {
+  font-size: calc(var(--size) / 3);
+}
+
+body {
+  background-color: var(--color-white);
+}
+
+section,
+.section {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--size);
+}
+
+h1 {
+  font-size: 2rem;
+  padding: calc(var(--size) / 3);
+  text-align: center;
+}
+h2 {
+  font-size: 1.75rem;
+  width: 100%;
+}
+label {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+label [type="checkbox"] {
+  margin-right: calc(var(--size) / 5);
+}
+button,
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--color-black);
+  display: block;
+}
+p {
+  font-size: 0.75rem;
+  width: fit-content;
+}
+p a {
+  display: inline;
+  font-size: 0.75rem;
+}
+form {
+  width: 100%;
+  padding: calc(var(--size) / 3);
+}
+form .inputs {
+  width: 100%;
+  margin-bottom: calc(var(--size) / 3);
+  gap: calc(var(--size) / 5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+button,
+.button_link {
+  background-color: var(--color-tertiary);
+  padding: calc(var(--size) / 6);
+  color: var(--color-white);
+  text-transform: capitalize;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+button:hover,
+.button_link:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-tertiary);
+  cursor: pointer;
+}
+button {
+  min-width: calc(var(--size) * 2);
+  margin: 0 auto;
+}
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+
+/* Header Links */
+header .links {
+  padding: calc(var(--size) / 3);
+  gap: calc(var(--size) / 3);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+header .links a,
+header .links button {
+  width: auto;
+  margin: 0;
+}
+header .links button.current {
+  border-bottom: 5px solid var(--color-secondary);
+}

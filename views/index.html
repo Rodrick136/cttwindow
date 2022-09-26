@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Base Metas for html documents -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- >>> comment these next lines when this goes to production -->
+  <link rel="stylesheet" href="../public/index.css">
+  <script type="text/javascript" src="../public/index.js"></script>
+  <!-- <<< -->
+
+  <!-- This is were it will actually pull from -->
+  <link rel="stylesheet" type="text/css" href="/index.css">
+  <script type="text/javascript" src="/index.js"></script>
+  <link rel="preload" prefetch as="fetch" href="/values.json" fetchpriority="high" crossorigin>
+
+
+  <title>Chris Titus Tech's Windows Utility</title>
+</head>
+
+<body>
+  <header class="section">
+    <a href="/">
+      <h1>Chris Titus Tech's Windows Utility</h1>
+    </a>
+    <div class="links">
+      <a target="_blank" class="button_link" href="https://github.com/ChrisTitusTech/winutil">Github Repo</a>
+      <button type="button" onclick="fetch_url('install')">Install</button>
+      <button type="button" onclick="fetch_url('tweaks')">Tweaks</button>
+      <button type="button" onclick="fetch_url('config')">Config</button>
+      <button type="button" onclick="fetch_url('updates')">Updates</button>
+    </div>
+  </header>
+  <section id="content">
+  </section>
+  <section>
+    <label for="custom_file">
+      <input class="hidden" type="file" id="custom_file" name="custom_file" accept="application/json">
+      <p class="button_link" id="custom_file_button">Choose a Custom File</p>
+    </label>
+  </section>
+</body>
+
+</html>

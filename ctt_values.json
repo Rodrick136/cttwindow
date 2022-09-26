@@ -1,0 +1,28 @@
+{
+  "values": {
+    "install": [
+      {
+        "type": "title",
+        "name": "Browsers"
+      },
+      {
+        "type": "winget",
+        "name": "Brave",
+        "value": "BraveSoftware.BraveBrowser",
+        "checked": false
+      },
+      {
+        "type": "winget",
+        "name": "Chrome",
+        "value": "Google.Chrome",
+        "checked": false
+      },
+      {
+        "type": "winget",
+        "name": "Un-Googled Chromium",
+        "value": "eloston.ungoogled-chromium",
+        "checked": false
+      }
+    ]
+  }
+}

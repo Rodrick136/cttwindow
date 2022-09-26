@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "description": "",
+  "main": "./server.ps1",
+  "scripts": {
+    "start": "./server.ps1",
+    "test": "invoke-pester ./tests/*.ps1",
+    "build": "psake",
+    "install": "yarn install --force --ignore-scripts --modules-folder pode_modules"
+  },
+  "author": "Rodrick136",
+  "name": "cttwindow",
+  "license": "MIT"
+}
